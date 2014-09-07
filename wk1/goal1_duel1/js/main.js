@@ -1,3 +1,13 @@
+/*
+  Harrison Aguiar
+  Date: 9/7/14
+ Assignment: Goal1: Assignment: Duel1
+ Part 1/3 of series
+
+ Programming for Web Applications I - Online
+ Professor: FIALISHIA OLOUGHLIN
+*/
+
 // self-executing function
 (function(){
 
