@@ -1,6 +1,6 @@
 /**
  * Duel Fight Game - FINISHED
- * Date: 4/09/13
+ * Date: 9/7/14
 
  Assignment 1
  Part 1/3 of series
@@ -28,7 +28,7 @@
 
     function fight(){
         alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);
-        for (var i = 0; i < 10; i++)
+        for (var i = 0; i < 10; i++)//if i is < then 10, execute the code
         {
             //random formula is - Math.floor(Math.random() * (max - min) + min);
             var minDamage1 = player1Damage * .5;
