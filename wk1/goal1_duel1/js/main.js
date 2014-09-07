@@ -39,8 +39,8 @@
             var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2);       //define formula variable for damage that occurs to player #2 at a random amount between half damage and maximum damage
 
             //inflict damage
-            playerOneHealth-=f1;
-            playerTwoHealth-=f2;
+            playerOneHealth-=f1;    //deduct damage after each round to fighter #1's health
+            playerTwoHealth-=f2;    //deduct damage after each round to fighter #2's health
 
             console.log(playerOneName+": "+playerOneHealth + " " + playerTwoName+":"+playerTwoHealth); //Print result of both players with ending health after the round fight to the console 
 
