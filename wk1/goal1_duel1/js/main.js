@@ -1,11 +1,3 @@
-/*
-  Harrison Aguiar
-  Date: 9/7/14
-
- Assignment: Goal1: Assignment: Duel1
- Part 1/3 of series
-*/
-
 // self-executing function
 (function(){
 
