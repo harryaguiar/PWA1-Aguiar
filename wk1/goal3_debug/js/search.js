@@ -1,8 +1,7 @@
 /*
   Harrison Aguiar
   Date: 9/7/14
- Assignment: Goal1: Assignment: Duel1
- Part 1/3 of series
+ Assignment: Buggy Search v1 
 
  Programming for Web Applications I - Online
  Professor: FIALISHIA OLOUGHLIN
