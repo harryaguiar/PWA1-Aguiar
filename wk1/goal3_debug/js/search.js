@@ -1,17 +1,28 @@
+/*
+  Harrison Aguiar
+  Date: 9/7/14
+ Assignment: Goal1: Assignment: Duel1
+ Part 1/3 of series
+
+ Programming for Web Applications I - Online
+ Professor: FIALISHIA OLOUGHLIN
+*/
+
 // Create privatized scope using a self-executing function
-(function(){
+(function(){		// self-executing function
 	
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
-	var resultsDIV = document.getElementById("results"),
-		searchInput = document.forms[0].search,
-		currentSearch = ''
+	var resultsDIV = document.getElementById("results"),				//define DOM element for search RESULTS
+		searchInput = document.forms[0].search,							//define DOM element for search INPUT
+		currentSearch = ''												//define current search as empty string
 	;
+	console.log("Begin Searching!");									//print to browser console.log "Begin Searching"
 	
 	// Validates search query
-	var validqte == function(query){
+	var validate = function(query){										//assign anonymous function to variable validate
 		
 		// Trim whitespace from start and end of search query
-		while(query.charAt(0) = " "){
+		while(query.charAt(0) = " "){									//start while loop that to see if query is empty
 			query = query.substring(1, query.length);
 		};
 		while(query.charAt(query.length-1) === ""){
@@ -19,8 +30,8 @@
 		;
 		
 		// Check search length, must have 3 characters
-		if(query.length < 3){
-			alert("Your search query is too small, try again.);
+		if(query.length < 3){											//conditional logic to determine if
+			alert("Your search query is too small, try again.");
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
@@ -31,7 +42,7 @@
 	};
 	
 	// Finds search matches
-	var search = function(query)
+	var search = function(query){										//assign anonymous function to variable search
 		
 		// split the user's search query string into an array
 		var queryArray = query.join(" ");
@@ -55,7 +66,7 @@
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
 				var compare = dbitem.indexOf(qitem);
-				if(compare !== -1){
+				if(compare !== -1){											//conditional logic to determine if compare 
 					results.push(db[i]);
 				};
 			;
@@ -64,7 +75,7 @@
 		results.sort();
 		
 		// Check that matches were found, and run output functions
-		if(results.length = 0){
+		if(results.length = 0){												//conditional logic to determine if											
 			noMatch();
 		}else{
 			showMatches(results);
@@ -110,7 +121,7 @@
 	// THE LINE DIRECTLY BELOW IS CORRECT
 	document.forms[0].onsubmit = function(){
 		var query = searchInput.value;
-		validqte(query);
+		validate(query);
 
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
