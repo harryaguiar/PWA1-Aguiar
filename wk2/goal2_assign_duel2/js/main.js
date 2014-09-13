@@ -1,8 +1,8 @@
 /*
   Harrison Aguiar
-  Date: 9/7/14
- Assignment: Goal1: Assignment: Duel1
- Part 1/3 of series
+  Date: 9/12/14
+ Assignment: Goal2: Assignment: Duel2
+ Part 2/3 of series
 
  Programming for Web Applications I - Online
  Professor: FIALISHIA OLOUGHLIN
@@ -28,13 +28,14 @@
     var playerOneHealth = 100;              //define variable for beginning health of fighter #1
     var playerTwoHealth = 100;              //define variable for beginning health of fighter #2
 	*/
-	var player1 = ["Hulk", 20, 100];
-	var player2 = ["Captain America", 20, 100];
+	var player1 = ["Hulk", 20, 100];       //define variable that references name, damage and health of fighter #1 in an array
+	var player2 = ["Captain America", 20, 100];    //define variable that references name, damage and health of fighter #2 in an array
+    
     //initiate round
     var round=0;                            //define variable to keep track what round we are in
 
     function fight(){                       //function that loops through rounds and reduces the player’s health accordingly
-        alert(player1[0]+":"+player1[2]+"  *START*  "+player2[0]+":"+player2[2]);   //alert the game is about to start, with player's name and health at 100
+        alert(player1[0]+":"+player1[2]+"  *START*  "+player2[0]+":"+player2[2]);   //alert the game is about to start, with player's name and initial health
         for (var i = 0; i < 10; i++)        //if i is < then 10, execute the code that loops through rounds and reduces the player’s health accordingly
         {
             //random formula is - Math.floor(Math.random() * (max - min) + min);
@@ -47,7 +48,7 @@
             player1[2]-=f1;    //deduct damage after each round to fighter #1's health
             player2[2]-=f2;    //deduct damage after each round to fighter #2's health
 
-            console.log(player1[0]+": "+player1[2] + " " + player2[0]+":"+player2[2]); //Print result of both players with ending health after the round fight to the console
+            console.log(player1[0]+": "+player1[2] + " " + player2[0]+":"+player2[2]); //Print result of both players with name and ending health after the round fight to the console
 
             //check for victory
             var result = winnerCheck();     //define variable for the round fight result
