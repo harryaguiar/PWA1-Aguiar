@@ -15,19 +15,7 @@
     console.log("FIGHT!!!");                //Print "Fight!!!" to console so we know program started
     console.log("Hulk & Captain America");  //Print text to console (Fighter Names)
 
-    // DEFINE PLAYERS VARIABLES
-    /*
-	var playerOneName = "Hulk";             //define variable for name of the fighter #1
-    var playerTwoName = "Captain America";  //define variable for name of the fighter #2
 
-    //player damage
-    var player1Damage = 20;                 //define variable for damage to be deducted from fighter #1
-    var player2Damage = 20;                 //define variable for damage to be deducted from fighter #2
-
-    //player health
-    var playerOneHealth = 100;              //define variable for beginning health of fighter #1
-    var playerTwoHealth = 100;              //define variable for beginning health of fighter #2
-	*/
 	var player1 = ["Hulk", 20, 100];       //define variable that references name, damage and health of fighter #1 in an array
 	var player2 = ["Captain America", 20, 100];    //define variable that references name, damage and health of fighter #2 in an array
     
