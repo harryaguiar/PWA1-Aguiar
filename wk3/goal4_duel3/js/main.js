@@ -1,8 +1,8 @@
 /*
   Harrison Aguiar
-  Date: 9/12/14
- Assignment: Goal2: Assignment: Duel2
- Part 2/3 of series
+  Date: 9/19/14
+ Assignment: Goal3: Assignment: Duel3
+ Part 3/3 of series
 
  Programming for Web Applications I - Online
  Professor: FIALISHIA OLOUGHLIN
