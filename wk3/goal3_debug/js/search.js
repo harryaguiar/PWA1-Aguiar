@@ -52,7 +52,7 @@
 		// loop through each index of db array
 		for(var i=0, j=db.length; i<j; i++){							//if one index of query is < than query in database length, execute the code that loops through each index of database array 
 
-            console.log("code here");
+
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
 			var dbTitleEnd = db[i].indexOf('|');						//define variable for each database index to each title that ends with a pipe 
@@ -62,7 +62,7 @@
 			// save a lowercase variable of the search keyword
 			for(var ii=0, jj=queryArray.length; ii<jj; ii++){			//if two indexes of query is < than query in database length, execute the code that loops through each index of database array
 				var qitem = queryArray[ii].toLowerCase();				//define variable for lowercase search keyword
-				
+
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
 				var compare = dbitem.indexOf(qitem);						//define variable to compare database item to index query item 
@@ -71,7 +71,7 @@
 				};
 			};
 			};
-		
+
 		results.sort();														//sort results
 		
 		// Check that matches were found, and run output functions
@@ -81,16 +81,16 @@
 			showMatches(results);											// show matching results
 		};
 	};
-	
+
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
-	var noMatch = function(){												//assign anonymous function to variable to show no match
-		var html = ''+														//define variable to html
-			'<p>No Results found.</p>'+										//show 'No Results found'.
-			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>' // show hint  'Try searching for "JavaScript".  Just an idea.'
-	;
+	var noMatch = function() {												//assign anonymous function to variable to show no match
+        var html = '' +														//define variable to html
+            '<p>No Results found.</p>' +										//show 'No Results found'.
+            '<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>' // show hint  'Try searching for "JavaScript".  Just an idea.'
+    ;
 		resultsDIV.innerHTML = html;										//show variable html into html page
 };
-	
+
 	// Put matches into page as paragraphs with anchors
 	var showMatches = function(results){									//assign anonymous function to variable to show matches
 		
@@ -98,28 +98,28 @@
 		var html = '<p>Results</p>', 										//define variable to html showing list of results
 			title, 															// show results' title	
 			url																//show results' url
-	};
-		
+	;
+
 		// loop through all the results search() function
-		for(var i=0, j=results.length; i<j; i++){						//if one index of query is < than query in search results length, execute the code that loops through each index of search results array 
-		
-			// title of video ends with pipe
-			// pull the title's string using index numbers
-			titleEnd = results[i].indexOf('|');							//results title end with index with pipe
-			title = results[i].substring(0, titleEnd);					//pull the title's string between start of results and the title end
-			
-			// pull the video url after the title
-			url = results[i].substring(results[i].indexOf('|')+1, results[i].length); //pull the video url after the video title
-			
-			// make the video link - THE NEXT LINE IS CORRECT.
-			html += '<p><a href=' + url + '>' + title + '</a></p>'; //show video link results with the url and title of the video
-		;
+		for(var i=0, j=results.length; i<j; i++) {						//if one index of query is < than query in search results length, execute the code that loops through each index of search results array
+
+            // title of video ends with pipe
+            // pull the title's string using index numbers
+            titleEnd = results[i].indexOf('|');							//results title end with index with pipe
+            title = results[i].substring(0, titleEnd);					//pull the title's string between start of results and the title end
+
+            // pull the video url after the title
+            url = results[i].substring(results[i].indexOf('|') + 1, results[i].length); //pull the video url after the video title
+
+            // make the video link - THE NEXT LINE IS CORRECT.
+            html += '<p><a href=' + url + '>' + title + '</a></p>'; //show video link results with the url and title of the video
+        };
 		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT. //show variable html into html page
 		};
 	
 	// The onsubmit event will be reviewed in upcoming Course Material.
 	// THE LINE DIRECTLY BELOW IS CORRECT
-	document.forms[0].onsubmit = function(){ 			//define DOM element for onsubmit event function 
+	document.forms[0].onsubmit = function(){ 			//define DOM element for onsubmit event function
 		var query = searchInput.value;					//define variable for search input value
 		validate(query);								//validate query
 
