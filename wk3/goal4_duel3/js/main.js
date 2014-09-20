@@ -12,11 +12,15 @@
 (function(){
 
     //CONSOLE LOG START OF 
-    console.log("FIGHT!!!");                //Print "Fight!!!" to console so we know program started
-    console.log("Hulk & Captain America");  //Print text to console (Fighter Names)
+    console.log(" ** FIGHT!!! **");                //Print "Fight!!!" to console so we know program started
+    //console.log("Hulk & Captain America");  //Print text to console (Fighter Names)
 
+    var fighter1_txt = document.querySelector("#hulk").querySelector("p");  //DOM variable for first fighter
+	var fighter2_txt = document.querySelector("#ca").querySelector("p");    //DOM variable for second fighter
+    var round_txt = document.querySelector("h5");                           //Pull in text indicating the round number
+    var button = document.getElementById("fight_btn");                      //Pull in button to start the game
 
-	var player1 = ["Hulk", 20, 100];       //define variable that references name, damage and health of fighter #1 in an array
+    var player1 = ["Hulk", 20, 100];       //define variable that references name, damage and health of fighter #1 in an array
 	var player2 = ["Captain America", 20, 100];    //define variable that references name, damage and health of fighter #2 in an array
     
     //initiate round
