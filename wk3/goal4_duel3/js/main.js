@@ -20,7 +20,7 @@
     var round_txt = document.querySelector("h5");                           //Pull in text indicating the round number
     var button = document.querySelector("#fight_btn");                      //Pull in button to start the game
 
-    console.log()
+    console.log();
 
     //SETUP click event
     button.addEventListener("click", fight, false);                 //add click event
