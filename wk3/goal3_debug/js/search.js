@@ -52,15 +52,16 @@
 		// loop through each index of db array
 		for(var i=0, j=db.length; i<j; i++){							//if one index of query is < than query in database length, execute the code that loops through each index of database array 
 
+            console.log("code here");
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
 			var dbTitleEnd = db[i].indexOf('|');						//define variable for each database index to each title that ends with a pipe 
-			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);	//define variable for lowercase database index of video title
+			var dbitem = db[i].toLowerCase().substring(0, dbTitleEnd);	//define variable for lowercase database index of video title
 			
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
 			for(var ii=0, jj=queryArray.length; ii<jj; ii++){			//if two indexes of query is < than query in database length, execute the code that loops through each index of database array
-				var qitem = queryArray[ii].tolowercase();				//define variable for lowercase search keyword
+				var qitem = queryArray[ii].toLowerCase();				//define variable for lowercase search keyword
 				
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
