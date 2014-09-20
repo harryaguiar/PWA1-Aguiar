@@ -1,7 +1,7 @@
 /*
   Harrison Aguiar
-  Date: 9/12/14
- Assignment: Buggy Search v2 
+  Date: 9/19/14
+ Assignment: Buggy Search v3
 
  Programming for Web Applications I - Online
  Professor: FIALISHIA OLOUGHLIN
@@ -37,7 +37,7 @@
 			return;
 		};
 		
-		search(query);
+		search(query);                      //search query
 	};
 	
 	// Finds search matches
